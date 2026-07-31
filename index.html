@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu 💌</title>
+<meta name="description" content="Sebuah surat cinta digital, dibuat khusus untukmu.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div id="petal-layer"></div>
+<div id="confetti-layer"></div>
+
+<!-- ===================== ENVELOPE GATE ===================== -->
+<div id="envelope-gate">
+  <div class="gate-inner">
+    <p class="gate-to">Untuk <span id="gate-recipient">Angel</span> 🤍</p>
+
+    <div class="envelope" id="envelope">
+      <div class="envelope-shadow-flap"></div>
+      <div class="letter-peek"></div>
+      <div class="envelope-body"></div>
+      <div class="envelope-flap"></div>
+      <div class="seal">✦</div>
+    </div>
+
+    <button class="btn" id="open-btn">Buka Suratnya</button>
+    <p class="gate-hint">tap amplopnya ya, pelan-pelan aja bukanya 🎀</p>
+  </div>
+</div>
+
+<!-- ===================== SITE ===================== -->
+<div id="site">
+
+  <button id="music-toggle" aria-label="Putar musik">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  </button>
+  <audio id="bg-audio" loop preload="none"></audio>
+
+  <nav id="nav-dots">
+    <button data-target="#hero" class="active" aria-label="Beranda"></button>
+    <button data-target="#counter" aria-label="Sudah berapa lama"></button>
+    <button data-target="#timeline" aria-label="Perjalanan kita"></button>
+    <button data-target="#gallery" aria-label="Galeri"></button>
+    <button data-target="#reasons" aria-label="Alasan"></button>
+    <button data-target="#letter" aria-label="Surat"></button>
+    <button data-target="#game" aria-label="Permainan"></button>
+    <button data-target="#guestbook" aria-label="Balasan"></button>
+    <button data-target="#finale" aria-label="Penutup"></button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <span class="eyebrow" id="hero-eyebrow">Sebuah surat kecil untuk...</span>
+      <h1 class="hero-names" id="hero-names">Angel &amp; Zanzan</h1>
+      <h2 class="hero-title" id="hero-title">Happy Girlfriend Day Sayang 🩷</h2>
+      <p class="hero-sub" id="hero-sub"></p>
+      <div class="hero-scroll"><span>scroll pelan-pelan ya</span><span class="arrow"></span></div>
+    </div>
+  </section>
+
+  <!-- COUNTER -->
+  <section id="counter">
+    <div class="container">
+      <span class="eyebrow">sudah berapa lama, ya?</span>
+      <h2 class="section-title">Kita, Sejak Hari Itu</h2>
+      <p class="section-sub">Setiap detik yang berjalan, aku masih sama bahagianya kayak hari pertama, dan bakal selalu begitu.</p>
+      <div class="counter-grid" id="counter-grid">
+        <div class="counter-box"><div class="num" id="c-days">0</div><div class="label">Hari</div></div>
+        <div class="counter-box"><div class="num" id="c-hours">0</div><div class="label">Jam</div></div>
+        <div class="counter-box"><div class="num" id="c-mins">0</div><div class="label">Menit</div></div>
+        <div class="counter-box"><div class="num" id="c-secs">0</div><div class="label">Detik</div></div>
+      </div>
+      <p class="counter-note">...dan masih akan terus bertambah 💗</p>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="container">
+      <span class="eyebrow">perjalanan kita</span>
+      <h2 class="section-title">Sedikit Cerita Kita</h2>
+      <p class="section-sub">Beberapa momen kecil yang aku simpan baik-baik.</p>
+      <div class="timeline" id="timeline-list"></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <span class="eyebrow">foto kamu cakep semua</span>
+      <h2 class="section-title">Coba deh liat...</h2>
+      <p class="section-sub">Foto-foto favoritku, tap salah satu buat lihat lebih besar.</p>
+      <div class="gallery" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section id="reasons">
+    <div class="container">
+      <span class="eyebrow">tap kartunya</span>
+      <h2 class="section-title">Alasan Aku Sayang Kamu</h2>
+      <p class="section-sub">Ada banyak, ini cuma sebagian kecil aja.</p>
+      <div class="reasons-grid" id="reasons-grid"></div>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section id="letter">
+    <div class="container">
+      <span class="eyebrow">surat asli</span>
+      <h2 class="section-title">Buat Kamu, yang Baca Ini</h2>
+      <div class="letter-card">
+        <p class="letter-greet" id="letter-greet">Halo Sayangku,</p>
+        <div class="letter-body" id="letter-body"></div>
+        <p class="letter-sign" id="letter-sign">Selalu sayang kamu, Aku</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOVE GAME -->
+  <section id="game">
+    <div class="container">
+      <span class="eyebrow">satu pertanyaan penting</span>
+      <h2 class="section-title">Boleh Tanya Sesuatu?</h2>
+      <div class="game-box">
+        <p id="game-question">Kamu masih sayang aku, kan?</p>
+        <div class="game-buttons">
+          <button class="btn" id="btn-yes">Iya, sayang banget</button>
+          <button class="btn ghost" id="btn-no">Enggak</button>
+        </div>
+        <p class="game-result" id="game-result">Aku juga sayang kamu, lebih dari kemarin 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown">
+    <div class="container">
+      <span class="eyebrow">Love You Sayaanggg</span>
+      <h2 class="section-title" id="cd-label">Special Day Counting</h2>
+      <div class="countdown-grid" id="countdown-grid">
+        <div class="counter-box"><div class="num" id="d-days">0</div><div class="label">Hari</div></div>
+        <div class="counter-box"><div class="num" id="d-hours">0</div><div class="label">Jam</div></div>
+        <div class="counter-box"><div class="num" id="d-mins">0</div><div class="label">Menit</div></div>
+        <div class="counter-box"><div class="num" id="d-secs">0</div><div class="label">Detik</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUESTBOOK -->
+  <section id="guestbook">
+    <div class="container">
+      <span class="eyebrow">giliran kamu nulis</span>
+      <h2 class="section-title" id="gb-title">Balas Suratnya, Yachhh</h2>
+      <p class="section-sub">Tulis apa aja yang kamu rasain. Ini tersimpan cuma di browser kamu sendiri, jadi aman &amp; pribadi.</p>
+      <form class="gb-form" id="gb-form">
+        <input type="text" id="gb-name" placeholder="Nama kamu" required maxlength="40">
+        <textarea id="gb-msg" rows="3" placeholder="Tulis balasan di sini..." required maxlength="400"></textarea>
+        <button type="submit" class="btn">Kirim Balasan</button>
+      </form>
+      <div class="gb-list" id="gb-list"></div>
+    </div>
+  </section>
+
+  <!-- FINALE -->
+  <section id="finale">
+    <div class="container">
+      <span class="eyebrow">sebelum aku sudahin</span>
+      <h2 class="section-title">Aku Mau Peyukkk</h2>
+      <p class="section-sub">Sayang teken ini yahh</p>
+      <button class="btn" id="hug-btn">Kirim Pelukan Virtual 🤍</button>
+      <p class="finale-msg" id="hug-msg">*peluk erat* — makasih udah baca sampai sini. Aku sayang kamu. 💌</p>
+    </div>
+  </section>
+
+  <footer>
+    <p id="footer-text">Dibuat dengan 💗</p>
+  </footer>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button class="lb-close" aria-label="Tutup">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Sebelumnya">&#8249;</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption class="cap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" aria-label="Berikutnya">&#8250;</button>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
