@@ -54,7 +54,7 @@ const CONFIG = {
   letterParagraphs: [
     "Aku nggak pinter buat kata- kata kaya gini haha, tapi aku pengen kamu tau kalo hari-hari aku jadi berasa lebih ringan sejak ada kamu.",
     "Makasih ya udah mau nerima aku dan buka hati kamu untuk aku, makasi sudah mau cerita hari hari kamu sama aku, makasi udah selalu terbuka sama aku, makasi udah nerima sifat aku yang clingy dan gajelas, makasi udah khawatirin aku, makasi udah sayang sama aku, pokonya makasi buat semua yang kamu kasi ke akuu ya sayangg. Kamu tetap di sisi aku ya, dan itu berarti banyak buat aku.",
-    "Intinya aku pengen bilang kalo aku bersyukur banget bisa kenal, deket, dan selalu bareng kamu. Aku tau hubungan kita ga bakal mudah kedepannya karena halangan yang susah banget, tapi semoga diberi jalan keluatnya dan semoga ke depannya kita masih terus milih satu sama lain ya sayang."
+    "Intinya aku pengen bilang kalo aku bersyukur banget bisa kenal, deket, dan selalu bareng kamu. Aku tau hubungan kita ga bakal mudah kedepannya karena halangan yang susah banget, tapi semoga diberi jalan keluarnya dan semoga ke depannya kita masih terus milih satu sama lain ya sayang."
   ],
   letterClosing: "I Always Love You,",
   letterSignature: "Zhan",
